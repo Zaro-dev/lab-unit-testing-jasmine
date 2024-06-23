@@ -21,9 +21,9 @@ describe("Iteration 1 | Getting Started", () => {
       });
 
       it("should return undefined if any of the arguments is not a number", () => {
-        expect(add(NaN,NaN)).toEqual(undefined);
-        expect(add(1,NaN)).toEqual(undefined);
-        expect(add(NaN,2)).toEqual(undefined)
+        expect(add(1,"2")).toEqual(undefined);
+        expect(add("1",2)).toEqual(undefined);
+        expect(add("2","5")).toEqual(undefined)
       });
     });
   });
